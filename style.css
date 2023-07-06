@@ -33,7 +33,6 @@ body {
 h1 {
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
 }
 h2 {
   margin: 0.375em 0;
@@ -243,9 +242,12 @@ footer p {
   }
 
   /* about.html */
+
   .about-img-title {
     display: flex;
+    gap: 20px;
   }
+
   .about-heading-subheading {
     margin-left: 1.5em;
   }

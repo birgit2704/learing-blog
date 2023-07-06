@@ -4,13 +4,17 @@ import {
   renderBlogsOneToSix,
 } from "./sharedFunctions.module.js";
 
+const selectedBlog = "";
+
 if (document.getElementById("big-container")) {
   renderBlogsOneToSix();
 } else renderBlogsOneToThree();
 
 document.addEventListener("click", function (e) {
-  if (e.target.id === "view-more") renderAllBlogs();
-  document.getElementById("view-more").style.display = "none";
+  if (e.target.id === "view-more") {
+    renderAllBlogs();
+    document.getElementById("view-more").style.display = "none";
+  }
 });
 
 function renderAllBlogs() {
