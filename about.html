@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>insights</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="./images/image 17.png" alt="logo" />
+      <p class="logo-text">My learning insights</p>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about-section" id="about-section">
+        <div class="about-img-title">
+          <img
+            class="about-img"
+            src="./images/birgit.jpg"
+            alt="headshot Birgit"
+          />
+          <div class="about-heading-subheading">
+            <h1>Hi all! My name is Birgit. Welcome to my blog!</h1>
+            <p class="about-subtext-heading">
+              The learning journey to become a frontend developer is different
+              for all of us. Sometimes though we share the same experiences. And
+              certainly we feel the curiosity to find out how others on the same
+              path are doing.
+            </p>
+          </div>
+        </div>
+        <div class="about-text">
+          <h4 class="about-title-paras">That's why...</h4>
+          <p>
+            ... I decided to share some of my personal experiences. To give
+            advise, to inform and to entertain you. I hope that you can relate
+            to some of them, that you may have a little laugh on my cost and
+            that you go back to learning feeling more inspired than before.
+          </p>
+          <h4>YOU can contribute</h4>
+          <p>
+            If you wish to comment on any of my blogs, write me an email
+            <a class="email" href="mailto:birgit.bartenschlager@web.de"
+              >birgit.bartenschlager@web.de</a
+            >. I will consider including your comment below the blog your
+            commenting on.
+          </p>
+        </div>
+      </section>
+
+      <h4 class="recent-posts">Recent Posts</h4>
+
+      <div id="blog-container" class="blog-container">
+        <!-- Blogs get rendered here -->
+      </div>
+
+      <footer>
+        <p>My Learning Journal</p>
+        <p class="copyright">Copyright &copy2023</p>
+      </footer>
+    </main>
+
+    <script src="about.js" type="module"></script>
+  </body>
+</html>
