@@ -8,6 +8,7 @@ document.addEventListener("click", function (e) {
     selectedBlog = e.target.dataset.btn;
     localStorage.setItem("blogId", selectedBlog);
     renderSelectedBlog();
+    scroll(0, 0);
   }
 });
 

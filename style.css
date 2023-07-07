@@ -26,6 +26,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   max-width: 1280px;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 /* Typography */
@@ -104,7 +105,7 @@ a {
 
 .hero-section {
   padding: 5.44em 1.25em 1.56em;
-  background-image: url("./images/article-image-hero.png");
+  background-image: url("https://images.unsplash.com/photo-1599922796091-c63c77b4fcff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjEzfHxjb21wdXRlciUyMGJsYXV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60");
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -205,6 +206,10 @@ footer p {
 
 .selected-date {
   margin-top: -1em;
+}
+
+.selected-blog-longtext p {
+  margin: 1em 0;
 }
 
 /* MEDIA QUERIES */
