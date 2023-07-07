@@ -1,25 +1,28 @@
 import { renderBlogsOneToThree } from "./sharedFunctions.module.js";
 import { blogs } from "./blogs.js";
 
+let selectedBlog = localStorage.getItem("blogId");
+
 renderSelectedBlog();
 renderBlogsOneToThree();
 
 function renderSelectedBlog() {
-  const selectedBlog = blogs[0];
+  let blogToRender = blogs[selectedBlog];
+  console.log(blogToRender.img);
 
   document.getElementById("selected-blog").innerHTML = `
-    <div class="article-heading-subheading">
-      <p class="date selected-date">${selectedBlog.date}</p>
-      <h1>${selectedBlog.header}</h1>
-      <p>${selectedBlog.shortText}</p>
-    </div>
-    <img
-              class="selected-article-img"
-              src="${selectedBlog.img}"
-              alt="${selectedBlog.alt}"
-    />
-    
-    <div class="selected-blog-longtext">${selectedBlog.longText}
-    </div>
-  `;
+     <div class="article-heading-subheading">
+       <p class="date selected-date">${blogToRender.date}</p>
+       <h1>${blogToRender.header}</h1>
+       <p>${blogToRender.shortText}</p>
+     </div>
+     <img
+               class="selected-article-img"
+               src="${blogToRender.img}"
+               alt="${blogToRender.alt}"
+     />
+
+     <div class="selected-blog-longtext">${blogToRender.longText}
+     </div>
+   `;
 }

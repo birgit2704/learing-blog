@@ -4,7 +4,7 @@ import {
   renderBlogsOneToSix,
 } from "./sharedFunctions.module.js";
 
-const selectedBlog = "";
+let selectedBlog = "";
 
 if (document.getElementById("big-container")) {
   renderBlogsOneToSix();
@@ -14,6 +14,11 @@ document.addEventListener("click", function (e) {
   if (e.target.id === "view-more") {
     renderAllBlogs();
     document.getElementById("view-more").style.display = "none";
+  }
+  if (e.target.dataset.btn) {
+    selectedBlog = e.target.dataset.btn;
+    localStorage.setItem("blogId", selectedBlog);
+    window.location = "./article.html";
   }
 });
 
@@ -33,6 +38,7 @@ function renderAllBlogs() {
                 <p>
                   ${blog.shortText}
                 </p>
+                <button  class="read-more" data-btn="${blog.id}">Read more....</button>
               </section>
           `;
     }

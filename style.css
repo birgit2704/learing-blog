@@ -141,6 +141,11 @@ a {
 .blog-img {
   width: 100%;
 }
+.read-more {
+  align-self: end;
+  margin: 0;
+  font-weight: 400;
+}
 
 /* FOOTER */
 footer {
