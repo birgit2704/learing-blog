@@ -56,6 +56,8 @@ function renderHero() {
         <p>
           ${blogs[0].shortText}
         </p>
+        <button  class="read-more" data-btn="${blogs[0].id}" style="color: white">Read more....</button>
+        </section>
   </div>
     `;
 }

@@ -3,6 +3,14 @@ import { blogs } from "./blogs.js";
 
 let selectedBlog = localStorage.getItem("blogId");
 
+document.addEventListener("click", function (e) {
+  if (e.target.dataset.btn) {
+    selectedBlog = e.target.dataset.btn;
+    localStorage.setItem("blogId", selectedBlog);
+    renderSelectedBlog();
+  }
+});
+
 renderSelectedBlog();
 renderBlogsOneToThree();
 

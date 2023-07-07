@@ -16,6 +16,7 @@ export function renderBlogsOneToThree() {
                 <p>
                   ${blog.shortText}
                 </p>
+                <button  class="read-more" data-btn="${blog.id}">Read more....</button>
               </section>
           `;
     }
@@ -39,6 +40,8 @@ export function renderBlogsOneToSix() {
                   <p>
                     ${blog.shortText}
                   </p>
+                  <button  class="read-more" data-btn="${blog.id}">Read more....</button>
+                  </section>
                 </section>
             `;
     }
