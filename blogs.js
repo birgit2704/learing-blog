@@ -38,7 +38,7 @@ export const blogs = [
       "The most important thing to become a developer is to <i>be</i> a developer - How I broke old thinking patterns and found a new mindset.",
     longText: `<p>A little time ago, the telephone rang. It was a friend of a friend offering me a job 😀- as office clerk for the local flower shop 😭.</p>
     <p>I said, no thanks and that I was studying because I wanted to become a software developer. After I had hung up, I was very upset. Why did I say I WANTED to become a software developer? I was finishing my 9-module course and the only thing left for me to do was to finish the capstone project to get the certificate. What I should have said: "no thanks to your job offer, I AM a software developer and we should talk about your web page, I have seen it can be improved. I have some ideas. When can we meet?" Why am I not confident like this?</p>
-    <p>So I decided to get more confidence. I eat an apple every day (not to keep the doctor away, ha-ha) and with every bite I say to myself: "I am a software developer" Do you know what? This simply and - admittedly stupid - routine has changed the way I think of myself. I AM a software developer now. - Just not yet with a job.</p>`,
+    <p>So I decided to get more confidence. I eat an apple every day (not to keep the doctor away, ha-ha) and with every bite I say to myself: "I am a software developer" Do you know what? This simple and - admittedly stupid - routine has changed the way I think of myself. I AM a software developer now. - Just not yet with a job.</p>`,
     id: 2,
   },
   {
