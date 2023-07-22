@@ -1,4 +1,4 @@
-import { renderBlogsOneToThree } from "./sharedFunctions.module.js";
+import { renderBlogs } from "./sharedFunctions.module.js";
 import { blogs } from "./blogs.js";
 
 let selectedBlog = localStorage.getItem("blogId");
@@ -13,7 +13,7 @@ document.addEventListener("click", function (e) {
 });
 
 renderSelectedBlog();
-renderBlogsOneToThree();
+renderBlogs(3);
 
 function renderSelectedBlog() {
   let blogToRender = blogs[selectedBlog];

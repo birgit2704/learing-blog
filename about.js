@@ -1,8 +1,8 @@
-import { renderBlogsOneToThree } from "./sharedFunctions.module.js";
+import { renderBlogs } from "./sharedFunctions.module.js";
 
 let selectedBlog = "";
 
-renderBlogsOneToThree();
+renderBlogs(3);
 
 document.addEventListener("click", function (e) {
   if (e.target.dataset.btn) {
