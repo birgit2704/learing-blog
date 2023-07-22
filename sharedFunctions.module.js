@@ -6,10 +6,8 @@ export function renderBlogs(num) {
   blogs.forEach((blog) => {
     if (blog.finished && num === 3) {
       blogsToRender.unshift(blog);
-      console.log(blogsToRender);
     } else if (blog.id !== 0) {
       blogsToRender.push(blog);
-      console.log(blogsToRender);
     }
   });
   blogHtml = blogsToRender
